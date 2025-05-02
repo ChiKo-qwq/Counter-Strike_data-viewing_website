@@ -1,4 +1,4 @@
-一个具有战绩计算以及显示功能的网页，建议配合MatchZy插件使用，需要pandas，os，chardet，flask库
+一个具有战绩计算以及显示功能的网页，建议配合MatchZy插件使用，需要pandas，os，chardet，flask库，下载后运行app.py即可，作者所开放的端口为1988，大家使用时注意
 
 下载的Match_Stats文件夹用于存放MatchZy插件生成的csv战绩文件
 
