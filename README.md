@@ -1,2 +1,9 @@
-==this is a repository for Sanlin Amateur League(temporary name)==
-the website and server will be finished before July 1st
+一个具有战绩计算以及显示功能的网页，建议配合MatchZy插件使用，需要pandas，os，chardet，flask库
+
+下载后需要在文件夹内创建名为“Stats_Processed”的空文件夹，以及一个名为“Match_Stats”的文件夹，以存放csv战绩文件
+
+程序中有作者自创的rating计算方法，因为作者举办的比赛缩写为SAL故称为rating sal。此rating计算方法鼓励闪光弹的使用，若有更好的计算方法欢迎反馈
+
+目前为version 1.0，有许多不完善的地方，网页仅实现了数据查询，其余部分均留空，等待添加功能，目前规划为加入demo下载，单场数据查询，比赛资讯，赛程安排等。在2025年7月前会将网页制作完毕，7月后会进行美化
+
+此为作者制作的第一个项目，在此之前仅学习计算机1个月，错误较多请多多包涵
