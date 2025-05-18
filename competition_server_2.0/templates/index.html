@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三林学生联赛</title>
+    <style>
+        .Name {
+            margin: auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .Announcement-Box {
+            margin: auto;
+            text-align: center;
+            width: 90%;
+            background-color: rgb(0, 247, 255);
+            border: 1px solid rgb(0, 247, 255);
+            padding: 10px;
+        }
+
+        .Player-Box {
+            width: 25%;
+            float: right;
+        }
+        table, th, td{
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class = 'Name'>
+        <h1>三林学生联赛<br>Sanlin Amateur League</h1>
+    </div>
+
+    <div class = 'Announcement-Box'>
+        <strong>公告</strong>：网站Version 2.0更新。<br>新增功能：实时BP，新闻板块，选手及战队注册，rating算法,ui更新等。<br>Sanlin Amateur League S1开始时间：<strong>2025年7月1日</strong>
+    </div>
+
+    <div class = 'Player-Box'>
+        {{ Show_Top_Players | safe }}
+    </div>
+
+    <div class = 'Team-Box'>
+        {{ Show_Top_Teams | safe }}
+    </div>
+
+    <div class = 'Player-Sign-Up'>
+        <a href = "{{ url_for('Player_SignUp')}}">
+            <button>选手注册(或修改ID)</button>
+        </a>
+    </div>
+
+    <div class = 'Team-Sign-Up'>
+        <a href = "{{ url_for('Team_SignUp')}}">
+            <button>战队注册(或修改)</button>
+        </a>
+    </div>
+
+    
+</body>
+</html>

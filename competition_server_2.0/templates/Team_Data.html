@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>战队详情 —— {{ Team_Stat['战队名'] }}</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .Stat {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto;
+        }
+
+        .Stat th, .Stat td {
+            height: 50px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .Stat th{
+            height: 50px;
+            background-color: whitesmoke;
+        }
+
+        .box {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>战队数据详情 —— {{ Team_Stat['战队名'] }}</h1>
+    <table class = 'Stat'>
+        <thead>
+            <tr>
+            {% for key, value in Team_Stat.items() %}
+                <th>{{ key }}</th>
+            {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            {% for key, value in Team_Stat.items() %}
+                <td>{{ value }}</td>
+            {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+
+    <div class = 'box'>
+        <button class = 'button'>
+            <a href = '/'>
+                回到主页
+            </a>
+        </button>
+    </div>
+</body>
+</html>

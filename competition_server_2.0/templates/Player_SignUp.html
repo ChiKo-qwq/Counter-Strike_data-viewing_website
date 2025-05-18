@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAL选手注册</title>
+    <style>
+        .error { color: red; }
+
+        .Title{
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .GameID{
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .SteamID{
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .Submit{
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 12px;
+            color: aqua;
+            border: none;
+        }
+
+        .box {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = 'Title'>
+        <h1>三林学生联赛选手注册</h1>
+    </div>
+
+    {% if error %}
+        <p class = 'error'>{{ error }}</p>
+    {% endif %}
+
+    <form method = 'POST'>
+        <div class = 'GameID'>
+            <label for = 'Game_ID'>游戏昵称：</label>
+            <input type = 'text' id = 'Game_ID' name = 'Game_ID' required><br><br>
+        </div>
+        
+        <div class = 'SteamID'>
+            <label for = 'Steam_ID'>Steam 64位ID</label>
+            <input type = 'text' id = 'Steam_ID' name = 'Steam_ID' required 
+               pattern = '\d{17}' title = '请输入Steam 64位ID(17位)'><br><br>
+        </div>
+        
+        <div class = 'Submit'>
+            <button type = 'submit'>注册</button>
+        </div>
+    </form>
+
+    <div class = 'box'>
+        <button class = 'button'>
+            <a href = '/'>
+                回到主页
+            </a>
+        </button>
+    </div>
+</body>
+</html>
