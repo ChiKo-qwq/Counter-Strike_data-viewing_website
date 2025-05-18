@@ -1,5 +1,7 @@
 比赛服务器辅助网站2.0版本更新
+
 将此文件夹下载至服务器game/csgo中即可（与MatchZy，MatchZy_Stats，MatchZyDataBackup同级即可）
+
 警告：缺少Steamid_Gameid.csv文件，MatchZy_Stats文件夹和Teams.csv文件会导致出错！建议在部署此网站时创建两个名为Steamid_Gameid.csv和Teams.csv的空文件
 
 一个具有战绩计算以及显示功能的网页，需要配合MatchZy插件使用，需要pandas，os，csv，flask库，下载后运行app.py即可，作者所开放的端口为1988，大家使用时注意
